@@ -1,11 +1,18 @@
-<h1>Text Classification to Detect Sarcasm</h1>
+<h1>Classification and Evaluation to Detect Spam</h1>
 
  ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
 <h2>Description</h2>
-
-In this project, I will train and analyze a text classifier to predict sarcasm in Reddit comments using the SARC 2.0 dataset. The classifier will determine if a comment is sarcastic based on explicit sarcasm markers in the message. Sarcasm detection is challenging because it is highly subjective, often misunderstood, and depends on speaker intent and listener interpretation. Despite these complexities, this project will simplify the task by focusing solely on explicit sarcasm markers without considering the surrounding discussion context.
 <br />
+
+In this project I will build classification models and calculate metrics for their performance. 
+
+The scenario I will address is "spam" e-mail detection. This is a very important and widely-used supervised machine learning task that attempts to find unsolicited, mass-produced messages that have irrelevant and/or inappropriate content (often mass marketing or attempts at fraud). These are sometimes called "spam filters".
+
+I will treat this task as a binary classification problem: detecting if an email is "spam" (Class == 1) or not (Class == 0, a regular/good e-mail). Email systems will typically automatically move messages detected as "spam" to a "Spam" or "Deleted" folder so the user will not have to read them in their regular inbox.
+
+In this setup, a false positive would mark a regular/good e-mail as spam. The key aspect of the "spam" scenario is that false positives are obviously very undesirable, because these would cause people to potentially lose valuable "good" messages. So I will aim for a highly precise spam filter that has few/no false positives. As a consequence it may let more spam through the filter. This is a classic precision / recall tradeoff, which I will explore and  investigate.
+
 
 
 <h2>Python Libraries Used</h2>
